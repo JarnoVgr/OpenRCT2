@@ -1326,13 +1326,13 @@ void peep_update_falling(rct_peep* peep){
 
 		peep_update_action(&x, &y, &xy_distance, peep);
 		if (peep->action == PEEP_ACTION_DROWNING) return;
-		if (!(RCT2_GLOBAL(RCT2_ADDRESS_PARK_FLAGS, uint32) & 0x80000)){
+
+		if (gConfigNotifications.guest_died) {
 			RCT2_GLOBAL(0x13CE952, uint16) = peep->name_string_idx;
 			RCT2_GLOBAL(0x13CE954, uint32) = peep->id;
-			if (gConfigNotifications.guest_died) {
-				news_item_add_to_queue(NEWS_ITEM_BLANK, 2347, peep->x | (peep->y << 16));
-			}
+			news_item_add_to_queue(NEWS_ITEM_BLANK, 2347, peep->x | (peep->y << 16));
 		}
+
 		RCT2_GLOBAL(0x135882E, uint16) += 25;
 		if (RCT2_GLOBAL(0x135882E, uint16) > 1000){
 			RCT2_GLOBAL(0x135882E, uint16) = 1000;
