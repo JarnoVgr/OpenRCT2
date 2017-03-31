@@ -148,9 +148,4 @@ You can translate the game into other languages by editing the language files in
 **OpenRCT2** is licensed under the GNU General Public License version 3.
 
 # 6 More information
-- [GitHub](https://github.com/OpenRCT2/OpenRCT2)
-- [OpenRCT2.org](https://openrct2.org)
-- [Forums](https://openrct2.org/forums/)
-- [Facebook](https://www.facebook.com/OpenRCT2)
-- [RCT subreddit](http://www.reddit.com/r/rct/)
-- [OpenRCT2 subreddit](http://www.reddit.com/r/openrct2/)
+- [Original author's website](http://www.clavusaurus.net/projects)
